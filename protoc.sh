@@ -5,6 +5,8 @@ RELEASE_VERSION=$2
 USER_NAME=$3
 EMAIL=$4
 
+set -e
+
 git config user.name "$USER_NAME"
 git config user.email "$EMAIL"
 git fetch --all && git checkout main
